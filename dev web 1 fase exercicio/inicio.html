@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial do quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 11%, rgba(45, 45, 134, 1) 55%);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .infos {
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            height: 100px;
+            width: 150px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            border: solid 1px white;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+             background: #0c5bd3;
+         }
+
+    </style>
+</head>
+
+<body>
+    <div class="infos">
+        <h1>Informações do aluno</h1>
+        <div class="card-container">
+            <div class="card">
+                <i class="fas fa-school"></i>
+                <p>Curso</p>
+                <p>Sistemas de informação</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-user"></i>
+                <p>Aluno</p>
+                <p>Augusto dos Santos Corrêa</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-book"></i>
+                <p>Disciplina</p>
+                <p>Desenvolvimento web</p>
+            </div>
+        </div>
+        <a class="button" href="quiz.html">Clique aqui para iniciar o quiz</a>
+    </div>
+</body>
+</html>
